@@ -1,5 +1,5 @@
-addnode=81.169.138.109
-addnode=81.169.205.113
-addnode=45.76.188.38
-addnode=45.32.159.22
-addnode=45.76.34.223
+addnode=seed1.limitlessvip.co.za
+addnode=seed2.limitlessvip.co.za
+addnode=seed3.limitlessvip.co.za
+addnode=seed4.limitlessvip.co.za
+addnode=seed5.limitlessvip.co.za
