@@ -2641,7 +2641,7 @@ CHECK_SYSTEM () {
 
   # Make sure it's 64bit.
   ARCH=$( uname -m )
-  if [[ "${ARCH}" != "x86_64" ]]
+  if [[ "${ARCH}" != "x86_64" ] || [ "${ARCH}" != "aarch64" ]]
   then
     echo
     echo "${ARCH} is not x86_64. A 64bit OS is required."
