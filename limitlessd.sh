@@ -77,7 +77,7 @@ while [[ ! -f ~/___mn.sh ]] || [[ $( grep -Fxc "# End of masternode setup script
 do
   rm -f ~/___mn.sh
   echo "Downloading Masternode Setup Script."
-  wget -4qo- rawcdn.githack.com/Limitless-VIP/masternode/576ec596640bd1fb495894ab4eac56500a883ac4/main.sh -O ~/___mn.sh
+  wget -4qo- rawcdn.githack.com/Limitless-VIP/masternode/a47a2df8d09b748225e97602666db309ddd18754/main.sh -O ~/___mn.sh
   COUNTER=$((COUNTER+1))
   if [[ "${COUNTER}" -gt 3 ]]
   then
