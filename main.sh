@@ -2641,14 +2641,13 @@ CHECK_SYSTEM () {
 
   # Make sure it's 64bit.
   ARCH=$( uname -m )
-#  if [[ "${ARCH}" != "x86_64" ]] && [[ "${ARCH}" != "aarch64" ]]
-#  then
-#    echo
-#    echo "${ARCH} is not x86_64. A 64bit OS is required."
-#    echo
-#    return 1 2>/dev/null || exit 1
-#  fi
-
+  if [[ "${ARCH}" != "x86_64" ]] && [[ "${ARCH}" != "aarch64" ]]
+  then
+    echo
+    echo "${ARCH} is not x86_64. A 64bit OS is required."
+    echo
+    return 1 2>/dev/null || exit 1
+  fi
 
   # Check hd space.
   FREEPSPACE_ALL=$( df -P . | tail -1 | awk '{print $4}' )
